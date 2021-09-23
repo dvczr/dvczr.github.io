@@ -213,22 +213,32 @@ body {
   background-color:rgb(236, 223, 228);
   font-family: 'Courier New', Courier, monospace;
   font-weight: 500;
+  color: #000;
 }
 /* Huvudtitel */
 h1 {
   font-variant: small-caps;
+  font-size: 2.5em;
 }
 /* Subtitlar */
 h2 {
-margin-bottom: 1rem;;
+margin-bottom: 1rem;
+font-size: xx-large;
 }
 /* Rubriker */
 h3 {
 margin: 2rem 0 1rem 0;
+font-size: x-large;
+color: #000;
 }
 /* NAVBAR-subtitlar */
 h4 {
 font-size: x-large;
+color: #000;
+}
+p {
+  font-family: Courier, 'Courier New', monospace;
+  font-size: large;
 }
 /* Klass för att centrera. */
 .center {
