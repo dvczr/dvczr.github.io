@@ -1,0 +1,243 @@
+/* ---------- */
+/* MAINHEADER */
+/* ---------- */
+/* ID för Huvudheader(Titel för hemsidan). */
+#mainHeader {
+  position: relative;
+  top: 2.8em;
+  text-align: center;
+  font-size: x-large;
+}
+/* ------------------------ */
+/* MAINNAV - Navigationsbar */
+/* ------------------------ */
+/* ID för Huvudmeny */
+#mainNav {
+  position: relative;
+  display: block;
+  top: 8em;
+  width: 60%;
+  margin: auto;
+  padding: 2.5em 0 1.5em 0;
+}
+#mainNav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+#mainNav a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 1.5em;
+}
+/* Klass som trycker navbar list-items till höger */
+.pushRight {
+  margin-right: auto;
+}
+/* Klass som trycker navbar list-items till vänster */
+.pushLeft {
+  margin-left: auto;
+}
+/* Markerar val av navbar (lyser upp backgrund)*/
+#mainNav li:hover {
+  border-radius: 30% 10% 25% 5%;
+  background-color: rgba(3, 3, 3, 0.25);
+}
+/* Skapar effekt av 'nedtryckning' */
+#mainNav li:active {
+  border-radius: 30% 10% 25% 5%;
+  box-shadow: 
+  inset -2px -2px 3px rgba(255, 255, 255, .6),
+  inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+/* ------------------ */
+/* SIDENAV - Sidomeny */
+/* ------------------ */
+/* ID för subMenyn(meny till höger av 'main') */
+#sideNav{
+  position: relative;
+  display: inline-block;
+  top: 8em;
+}
+#sideNav ul {
+  list-style: square;
+  list-style-position: inside;
+  padding: 0;
+}
+#sideNav li{
+  text-align: center;
+}
+#sideNav a {
+  display:block;
+  text-decoration: none;
+}
+/* ---- */
+/* MAIN */
+/* ---- */
+main {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  max-height: 35em;
+  padding: 0;
+  line-height: 1.5em;
+}
+section {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  top: 8em;
+  width: 60%;
+  max-height: 35em;
+  padding: 1em;
+  border: dotted;
+  line-height: 1.5em;
+}
+.page {
+  display: none;
+  box-sizing: border-box;
+}
+.active {
+  display: block;
+  box-sizing: border-box;
+}
+/* ----- */
+/* ASIDE */
+/* ----- */
+.aside {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  top: 8em;
+}
+div.aside {
+  margin-bottom: 5%;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* -------- */
+/* FOOTER'S */
+/* -------- */
+/* MAINFOOTER[SECTION] */
+#mainFooter {
+  width: 100%;
+  margin-top: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: #000;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: x-large;
+}
+/* [SID]FOOTER */
+#footer {
+  position: fixed;
+  bottom: 1%;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}
+/* --- */
+/* IMG */
+/* --- */
+/* Backgrundbild för hemsidan(BODY) */
+#imgBackground {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background-size: cover;
+  width: 100%;
+}
+/* Bild-klass för inuti SECTION */
+.imgSection {
+  float: right;
+  width: 25%;
+  margin: 0 2.5% 0.5% 2.5%;
+  border: solid 3.5px rgb(218, 137, 137);
+}
+/* Bild-klass för inuti ASIDE */
+.imgAside {
+  box-sizing: border-box;
+  width: 55%;
+  margin: 0 2.5% 0.5% 2.5%;
+  border: double rgb(218, 137, 137) 10px;
+}
+/* ------ */
+/* SCROLL */
+/* ------ */
+/* Klass för scroll */
+.scroll {
+  overflow: scroll;
+}
+/* Klass för storlek av scroll-rutan */
+.boxSize {
+  max-height: 35em;
+  width: 100%;
+  padding: 1em;
+}
+/* ----- */
+/* FLOAT */
+/* ----- */
+/* Floats-klasser */
+.floatAside {
+  float: right;
+  width: 20%;
+}
+.floatSideNav {
+  float: left;
+  width: 20%;
+  margin: auto;
+}
+.floatSection {
+  float: left;
+  width: 60%;
+  margin: auto;
+}
+/* ------------------------------------- */
+/* DEFAULT, BODY & FONTS-INSTÄLLNINGAR */
+/* ------------------------------------- */
+/* DEFAULT- inställningar */
+* {
+  margin:0;
+}
+/* BODY & FONTS- inställningar */
+body {
+  background-color:rgb(236, 223, 228);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+}
+/* Huvudtitel */
+h1 {
+  font-variant: small-caps;
+}
+/* Subtitlar */
+h2 {
+margin-bottom: 1rem;;
+}
+/* Rubriker */
+h3 {
+margin: 2rem 0 1rem 0;
+}
+/* NAVBAR-subtitlar */
+h4 {
+font-size: x-large;
+}
+/* Klass för att centrera. */
+.center {
+  text-align: center;
+}
+/* Klass för att marginaljustera text. */
+.justify {
+  text-align: justify;
+}
+/* Klass för 'bold'-text */
+.bold {
+  font-weight: bold;
+}
