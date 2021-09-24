@@ -97,6 +97,7 @@ section {
   top: 8em;
   width: 60%;
   max-height: 35em;
+  min-height: 35em;
   padding: 1em;
   border: dotted;
   line-height: 1.5em;
@@ -242,19 +243,22 @@ h1 {
 }
 /* Subtitlar */
 h2 {
-margin: 1rem 0;
-font-size: xx-large;
+  margin: 1rem 0;
+  font-size: xx-large;
 }
 /* Rubriker */
 h3 {
-margin: 2rem 0 1rem 0;
-font-size: x-large;
-color: #000;
+  margin: 2rem 0 1rem 0;
+  font-size: x-large;
+  color: #000;
 }
 /* NAVBAR-subtitlar */
 h4 {
-font-size: x-large;
-color: #000;
+  font-size: x-large;
+  color: #000;
+}
+h5 {
+  font-family: Courier, 'Courier New', monospace;
 }
 p {
   font-family: Courier, 'Courier New', monospace;
@@ -274,4 +278,24 @@ p {
 /* Klass för 'bold'-text */
 .bold {
   font-weight: bold;
+}
+/* ------- */
+/* KNAPPAR */
+/* ------- */
+.quiz {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 1.5em;
+}
+.quiz:hover {
+  border-radius: 30% 10% 25% 5%;
+  background-color: rgba(3, 3, 3, 0.25);
+}
+/* Skapar effekt av 'nedtryckning' */
+.quiz:active {
+  border-radius: 30% 10% 25% 5%;
+  box-shadow: 
+  inset -2px -2px 3px rgba(255, 255, 255, .6),
+  inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
