@@ -67,11 +67,15 @@
   padding: 0;
 }
 #sideNav li{
-  text-align: center;
+  text-align: right;
+  margin-right: 3em;
 }
 #sideNav a {
   display:block;
   text-decoration: none;
+}
+img.imgSidNav{
+  margin-bottom: 10%;
 }
 /* ---- */
 /* MAIN */
@@ -96,6 +100,11 @@ section {
   padding: 1em;
   border: dotted;
   line-height: 1.5em;
+}
+#imgLeft {
+  float: left;
+  max-height: 8rem;
+  width: auto;
 }
 .page {
   display: none;
@@ -170,6 +179,17 @@ footer a {
   margin: 0 2.5% 0.5% 2.5%;
   border: double rgb(218, 137, 137) 10px;
 }
+.imgSidNav{
+  box-sizing: border-box;
+  width: 55%;
+  margin: 0 2.5% 0.5% 2.5%;
+}
+.imgSize{
+  float: right;
+  max-width: 15%;
+  border: none;
+  /* max-height: 5%; */
+}
 /* ------ */
 /* SCROLL */
 /* ------ */
@@ -222,7 +242,7 @@ h1 {
 }
 /* Subtitlar */
 h2 {
-margin-bottom: 1rem;
+margin: 1rem 0;
 font-size: xx-large;
 }
 /* Rubriker */
@@ -238,7 +258,7 @@ color: #000;
 }
 p {
   font-family: Courier, 'Courier New', monospace;
-  font-size: large;
+  font-size: x-large;
 }
 /* Klass för att centrera. */
 .center {
@@ -247,6 +267,9 @@ p {
 /* Klass för att marginaljustera text. */
 .justify {
   text-align: justify;
+}
+.italic {
+  font-style: italic;
 }
 /* Klass för 'bold'-text */
 .bold {
