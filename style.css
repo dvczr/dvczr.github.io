@@ -292,7 +292,6 @@ p {
   border-radius: 30% 10% 25% 5%;
   background-color: rgba(3, 3, 3, 0.25);
 }
-/* Skapar effekt av 'nedtryckning' */
 .quiz:active {
   border-radius: 30% 10% 25% 5%;
   box-shadow: 
