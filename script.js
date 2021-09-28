@@ -59,7 +59,7 @@ function loop() {
   resetAll.addEventListener("click", function() {
     document.getElementById("firstName").value = "";
     document.getElementById("lastName").value = "";
-    document.getElementById("addInfo").style.display = "inline-block";
+    document.getElementById("addInfo").style.display = "block";
     document.getElementById("info").innerHTML = "";
     document.getElementById("info2").innerHTML = "";
     document.getElementById("resetBtn").style.display = "none";
