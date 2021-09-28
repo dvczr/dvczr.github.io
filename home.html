@@ -51,15 +51,18 @@
     </ul>
   </nav>
   <section class="boxSize scroll floatSection">
-    <div>
+    <div class="center">
       <a href="https://www.sti.se" title="STI" target="blank"><img class="imgSidNav" src="./img/stilogo.png" alt="Stockholms Tekniska Institut"></a>
-      <div>
-        <!-- <p>Vad är 10^2</p> -->
-        <button class="quiz" id="wrong"><h5>x</h5></button>
-        <button class="quiz" id="wrong"><h5>x</h5></button>
-        <button class="quiz" id="right"><h5>x</h5></button>
-        <p></p>
+
+      <div id="addInfo">
+        <input id="firstName" placeholder="Namn" onkeypress="enterPress(event)">
+        <input id="lastName" placeholder="Efternamn" onkeypress="enterPress(event)">
+        <button id="okBtn">Skicka</button>
       </div>
+      <p id="info"></p>
+      <p id="info2"></p>
+      <button id="resetBtn" value="hidden">Återställ</button>
+
     </div>
   </section>
   <!----------->

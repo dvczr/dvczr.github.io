@@ -280,21 +280,15 @@ p {
   font-weight: bold;
 }
 /* ------- */
-/* KNAPPAR */
+/* ADDINFO */
 /* ------- */
-.quiz {
-  position: relative;
+#addInfo input, button {
   display: inline-block;
-  text-decoration: none;
-  padding: 0.5em 1.5em;
 }
-.quiz:hover {
-  border-radius: 30% 10% 25% 5%;
-  background-color: rgba(3, 3, 3, 0.25);
+#info2 {
+  margin-top: 2rem;
 }
-.quiz:active {
-  border-radius: 30% 10% 25% 5%;
-  box-shadow: 
-  inset -2px -2px 3px rgba(255, 255, 255, .6),
-  inset 2px 2px 3px rgba(0, 0, 0, .6);
+#resetBtn {
+  display: none;
+  margin-top: 4rem;
 }
