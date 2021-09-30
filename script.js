@@ -26,26 +26,26 @@ function enterPress (enter) {
     document.getElementById("addInfo").setAttribute("style", "display: none");
   }
 }
-let namnUtanforKodblock = firstName.value;
-let efternamnUtanforKodBlock = lastName.value;
 
-// let namnUtanforKodblock = document.getElementById("#firstName");
-// let efternamnUtanforKodBlock = document.getElementById("#lastName");
 
-// EVENTLISTENER
+
+let namn2 = document.getElementById("firstName");
+let efternamn2 = document.getElementById("lastName");
+
+
 let okBtn = document.getElementById("okBtn");
 okBtn.addEventListener("click", function(){
-  if (namnUtanforKodblock !== "" && efternamnUtanforKodBlock !== "") {
+  if (namn2.value !== "" && efternamn2.value !== "") {
     fullName();
-    namnKomplett = namnUtanforKodblock.value + efternamnUtanforKodBlock.value;
+    namnKomplett = namn2.value + efternamn2.value;
     loop();
     document.getElementById("addInfo").style.display = "none";
   }
   else {
     try {
-      if (namnUtanforKodblock + efternamnUtanforKodBlock == "") throw "Du har inte fyllt i något!";
-      if (namnUtanforKodblock == "") throw "Du har inte fyllt i din förnamn!";
-      if (efternamnUtanforKodBlock == "") throw "Du har inte fyllt i din efternamn!";
+      if (namn2.value + efternamn2.value == "") throw "Du har inte fyllt i något!";
+      if (namn2.value == "") throw "Du har inte fyllt i din förnamn!";
+      if (efternamn2.value == "") throw "Du har inte fyllt i din efternamn!";
     }
     catch (error) {
       alert("Nu vart det tokigt här!\n" + error);
@@ -54,7 +54,7 @@ okBtn.addEventListener("click", function(){
 })
 
 function loop() {
-  for (let i = 1; i <= namnKomplett.length; i++) {
+  for (let i = 1; i < namnKomplett.length + 1; i++) {
     document.getElementById("info2").innerHTML = "Visste du att ditt namn innehåller " + i + " bokstäver!";
   }
   document.getElementById("resetBtn").style.display = "inline-block";
