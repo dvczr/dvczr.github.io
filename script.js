@@ -1,3 +1,6 @@
+let namnKomplett = "";
+
+
 function fullName() {
   var fullName = firstName.value + ' ' + lastName.value;
   document.getElementById('info').innerHTML = 'Hej på dig ' + fullName;
@@ -23,32 +26,32 @@ function enterPress (enter) {
     document.getElementById("addInfo").setAttribute("style", "display: none");
   }
 }
+let namnUtanforKodblock = firstName.value;
+let efternamnUtanforKodBlock = lastName.value;
 
-let namnUtanförKodblock = document.getElementById("firstName");
-let efternamnUtanförKodBlock = document.getElementById("lastName");
+// let namnUtanforKodblock = document.getElementById("#firstName");
+// let efternamnUtanforKodBlock = document.getElementById("#lastName");
 
 // EVENTLISTENER
 let okBtn = document.getElementById("okBtn");
 okBtn.addEventListener("click", function(){
-  if (namnUtanförKodblock !== "" && efternamnUtanförKodBlock !== "") {
+  if (namnUtanforKodblock !== "" && efternamnUtanforKodBlock !== "") {
     fullName();
-    namnKomplett = namnUtanförKodblock.value + efternamnUtanförKodBlock.value;
+    namnKomplett = namnUtanforKodblock.value + efternamnUtanforKodBlock.value;
     loop();
     document.getElementById("addInfo").style.display = "none";
   }
   else {
     try {
-      if (namnUtanförKodblock + efternamnUtanförKodBlock == "") throw "Du har inte fyllt i något!";
-      if (namnUtanförKodblock == "") throw "Du har inte fyllt i din förnamn!";
-      if (efternamnUtanförKodBlock == "") throw "Du har inte fyllt i din efternamn!";
+      if (namnUtanforKodblock + efternamnUtanforKodBlock == "") throw "Du har inte fyllt i något!";
+      if (namnUtanforKodblock == "") throw "Du har inte fyllt i din förnamn!";
+      if (efternamnUtanforKodBlock == "") throw "Du har inte fyllt i din efternamn!";
     }
     catch (error) {
       alert("Nu vart det tokigt här!\n" + error);
     }
   }
 })
-
-let namnKomplett = "";
 
 function loop() {
   for (let i = 1; i <= namnKomplett.length; i++) {
